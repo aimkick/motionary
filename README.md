@@ -1,17 +1,16 @@
-<img width="2553" height="1353" alt="image" src="https://github.com/user-attachments/assets/b353b129-022b-4212-b0c7-ff67f5aeb00c" /># 🌌 Motionary
+# 🌌 Motionary
 
 **The Ultimate Interactive Encyclopedia of Motion Design**
 
 > A comprehensive, living library of 500+ web and mobile motion effects, meticulously crafted with Next.js, Framer Motion, and modern web technologies.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Faimkick%2Fmotionary)
 ![Next.js](https://img.shields.io/badge/Next.js-16.0.5-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-Latest-ff0055?style=for-the-badge&logo=framer)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
-<img width="2553" height="1353" alt="image" src="https://github.com/user-attachments/assets/4a5685d5-4407-495d-a229-f8871fcae9cb" />
-<img width="2499" height="1113" alt="image" src="https://github.com/user-attachments/assets/ea94ba8c-1a22-492f-9d07-cb7c161fcce0" />
 
 ## ✨ Features
 
@@ -21,6 +20,7 @@
 - 🔍 **Multi-dimensional Filtering** - Search by trigger, emotion, tech stack, and element type
 - 📱 **Mobile & Web** - Covers both platform-specific and cross-platform effects
 - 🎮 **3D & WebGL** - Advanced effects using React Three Fiber
+- 📚 **Storybook Support** - Component isolation and documentation
 - 🚀 **Performance Optimized** - Built with Next.js 14+ App Router and Turbopack
 - 💾 **State Management** - Zustand for global filter states
 - 🎯 **Production Ready** - Fully typed with TypeScript
@@ -72,7 +72,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/motionary.git
+git clone https://github.com/aimkick/motionary.git
 
 # Navigate to project directory
 cd motionary
@@ -85,6 +85,16 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Storybook
+
+To view the component documentation and test components in isolation:
+
+```bash
+npm run storybook
+```
+
+Open [http://localhost:6006](http://localhost:6006) to view Storybook.
 
 ---
 
@@ -99,6 +109,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | **GSAP** | Complex scroll-triggered animations |
 | **React Three Fiber** | 3D graphics and WebGL effects |
 | **Zustand** | Lightweight state management |
+| **Storybook** | Component documentation and testing |
 | **Lucide React** | Beautiful icon library |
 
 ---
@@ -107,6 +118,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ```
 motionary/
+├── .github/            # CI/CD workflows and templates
+├── .storybook/         # Storybook configuration
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx          # Root layout with global styles
@@ -237,8 +250,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📮 Contact
 
-- Twitter: [@pokerjudge](https://twitter.com/pokerjudge)
-- Email: pokerjudge@hotmail.com
+- GitHub: [@aimkick](https://github.com/aimkick)
+- Email: aimkick@hotmail.com
 
 ---
 
