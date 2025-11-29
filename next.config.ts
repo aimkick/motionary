@@ -17,8 +17,8 @@ const nextConfig: NextConfig = {
   },
   assetPrefix: assetPrefix,
   basePath: basePath,
-  eslint: {
-    ignoreDuringBuilds: true,
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 

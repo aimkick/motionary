@@ -57,9 +57,13 @@ export const Sidebar = () => {
                 {category.options.map((option) => (
                   <button
                     key={option}
-                    onClick={() => setFilter(filterKey, option)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      console.log('Setting filter:', filterKey, option);
+                      setFilter(filterKey, option);
+                    }}
                     className={cn(
-                      "px-3 py-1.5 rounded-md text-xs transition-all duration-300 border",
+                      "px-3 py-1.5 rounded-md text-xs transition-all duration-300 border cursor-pointer z-50 relative",
                       activeFilters[filterKey] === option
                         ? "bg-white text-black border-white font-bold shadow-[0_0_15px_rgba(255,255,255,0.5)]"
                         : "bg-surface-200 text-white/70 border-transparent hover:bg-surface-300 hover:border-white/20"

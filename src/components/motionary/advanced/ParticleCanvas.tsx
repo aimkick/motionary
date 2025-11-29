@@ -6,7 +6,7 @@ import { Points, PointMaterial, OrbitControls } from '@react-three/drei';
 
 // Explicitly typing props for the Points component wrapper to avoid type errors
 function Stars(props: any) {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
   const [sphere, setSphere] = useState<Float32Array | null>(null);
 
   useEffect(() => {
