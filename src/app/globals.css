@@ -1,6 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-background: #030303;
+  --color-foreground: #ffffff;
+  --color-primary: #00f3ff;
+  --color-primary-foreground: #000000;
+  --color-secondary: #7000ff;
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #ff00ff;
+  --color-accent-foreground: #ffffff;
+  --color-surface-50: #0a0a0a;
+  --color-surface-100: #121212;
+  --color-surface-200: #1e1e1e;
+  --color-surface-300: #2a2a2a;
+  
+  --animate-spin-slow: spin 4s linear infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
 
 :root {
   --background: #030303;
@@ -16,21 +32,18 @@
   }
 }
 
-@layer utilities {
-  .glass-panel {
-    @apply bg-surface-50/50 backdrop-blur-md border border-white/10;
-  }
-  
-  .text-glow {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  }
+@utility glass-panel {
+  @apply bg-surface-50/50 backdrop-blur-md border border-white/10;
+}
 
-  .hide-scrollbar::-webkit-scrollbar {
+@utility text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
     display: none;
-  }
-
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
   }
 }
