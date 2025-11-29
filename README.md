@@ -1,4 +1,4 @@
-# 🌌 Motionary
+<img width="2553" height="1353" alt="image" src="https://github.com/user-attachments/assets/b353b129-022b-4212-b0c7-ff67f5aeb00c" /># 🌌 Motionary
 
 **The Ultimate Interactive Encyclopedia of Motion Design**
 
@@ -10,6 +10,8 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
+<img width="2553" height="1353" alt="image" src="https://github.com/user-attachments/assets/4a5685d5-4407-495d-a229-f8871fcae9cb" />
+<img width="2499" height="1113" alt="image" src="https://github.com/user-attachments/assets/ea94ba8c-1a22-492f-9d07-cb7c161fcce0" />
 
 ## ✨ Features
 
